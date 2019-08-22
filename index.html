@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Employee</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <div>
+                    <form id="form1">
+                        <P id="p"></P>
+                        <b><i>  Employee Salary Calculation.<br /><br /></b></i>
+                        Eno: <input class="eno" id="eno" type="text" size="20" name="eno" /><br /> Name : <input type="text" size="20" name="name" id="personName" /><br /> Gender : <input id="genMale" type="radio" name="gender">Male
+                        <input type="radio" name="gender" id="genFemal">Female <br>Dept
+                        <select id="dept">
+        <option>Acct</option>
+        <option>Prod</option>
+        <option>EDP</option>
+        <option>MKTG</option>
+    </select>
+                        <br>Owns Vehicle: <input type="checkbox" name="checkbox" id="own" onclick="showstatus()">
+                        <br>Basic Salary : <input type="text" size="20" name="sal" id="sal" /><br /> DA : <input type="text" size="20" name="da" id="da" /><br /> HRA : <input type="text" size="20" name="hra" id="hra" /><br /> PF : <input type="text" size="20"
+                            name="pf" id="pf" /><br /> PA is fixed $100 if persons own a vehical :<input type="text" size="20" name="psl" id="psl" value="0" /><br /> <br />
+                        <br />
+                        <b><i>Net Salary     :</b></i> <input type="text" size="20" id="ns" name="ns" /> <br />
+                        <input type="button" name="btn" value="Calculate" onclick="calc()" /><br />
+                    </form>
+                </div>
+            </td>
+            <td>
+                <div id="result" class="displayNone">
+                    Eno : <label id="lblEno"></label> <br> Ename : Mr./ Ms. &nbsp; <label id="lblEname"></label> <br> Dept : <label id="lblDept"></label><br>
+                    <label id="lblHasVh"></label> &nbsp; Vehicle <br> Basic : <label id="lblBasic"></label><br> DA@ <label id="lblDaPer"></label> % &nbsp; : &nbsp;
+                    <label id="lblDaVal"></label><br> HRA@ <label id="lblHraPer"></label> % &nbsp; : &nbsp;<label id="lblHraVal"></label><br> PF@ <label id="lblPfPer"></label> % &nbsp; : &nbsp; <label id="lblPfVal"></label><br> PA:&nbsp; <label id="lblPa"></label><br>                    Net Salary : &nbsp; <label id="lblNetSal"></label><br>
+                </div>
+            </td>
+
+
+
+
+
+
+            <!-- Optional JavaScript -->
+            <script src="js.js">
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+body {
+    background-color: olive;
+}
+
+input {
+    background-color: orange;
+    color: white;
+}
+
+div {
+    width: 500px;
+    display: inline-block;
+    border: 1px solid blue;
+    margin: 100px;
+}
+
+.eno {
+    position: relative;
+    left: 150px;
+}
+
+.displayNone {
+    display: none;
+}
